@@ -17,14 +17,9 @@ const sat = ()=> {
   const gmst = gstime(date);
   const position = eciToGeodetic(positionAndVelocity.position, gmst);
   console.log(position.height + " " + position.latitude + " " + position.longitude);
-
-  // console.log(position.longitude);
-  // console.log(position.latitude);
-  // console.log(position.height);
   }
 
 }
-
 function App() {
   const [satelliteData, setSatelliteData] = useState({});
   const getCoordinatesStellites = async () => {
